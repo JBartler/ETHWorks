@@ -5,83 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <nav>
-        <img src="./images/dark.svg" alt="">
-        <div class="navbar">
-            <a href="">ICO</a>
-            <a href="">Team</a>
-            <a href="">Contact</a>
+    <nav><!--  dodac do headera jak da rade -->
+        <div class="nav__logo">
+            <img src="./images/dark.svg" alt=''>
+        </div>
+        <div class="nav__navbar">
+            <ul>
+                <a class="nav__navbar__link" href="">ICO</a>
+                <a class="nav__navbar__link" href="">Team</a>
+                <a class="nav__navbar__link" href="">Contact</a>
+            </ul>
         </div>
     </nav>
     <header>
-        <h1>The first fully-automatic social crypto trading platform with real crypto currency</h1>
-        <p>Subscribe and get the lastes information</p>
-        <video src=""></video>
-        <input type="text" placeholder="Enter your email">
-        <button>Subscribe</button>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-arrow-down"></a>
+        <div class="header__container">
+            <h1 class="header__title">The first fully-automatic social crypto trading platform with real crypto currency</h1>
+                <div class="header__video">
+                    <video class="header__video__player"   poster="./images/video-2048.jpg">Your browser does not support the video tag</video>
+                </div>
+                <div class="header__subscribe">
+                    <p class="header__text">Subscribe and get the lastes information</p>
+                    <input class="header__input" type="text" placeholder="Enter your email">
+                    <button class="header__button" role="button">Subscribe</button>
+                </div>
+            <!-- <div class="header__social">
+                <ul>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#section" class="fa fa-arrow-down"></a></li>
+                </ul>
+            </div>  -->
+        </div> 
     </header>
     <main>
-        <h2 class="title">TEAM</h2>
+        <h2 class="main" id="section">TEAM</h2>
         <div class="team">
-            <img src="./images/Edgar Morrison.png" alt="">
-            <p class="name">Edgar Morrison</p>
-            <p class="position">CEO</p>
-            <p class="note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__member">
+                <img 
+                class="team__member__photo" 
+                src="./images/EdgarMorrison-141.jpg" 
+                srcset="./images/EdgarMorrison-564.jpg 564w"
+                alt="">
+            </div>
+            <h3 class="team__name">Edgar Morrison</h3>
+            <h4 class="team__position">CEO</h4>
+            <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+            <div class="team__social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
         </div>
         <div class="team">
-            <img src="./images/Mae Martin.png" alt="">
-            <p class="name">Mae Martin</p>
-            <p class="position">CTO</p>
-            <p class="note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__member">
+                <img 
+                class="team__member__photo" 
+                src="./images/MaeMartin-475.jpg" alt="">
+            </div>
+            <h3 class="team__name">Mae Martin</h3>
+            <h4 class="team__position">CTO</h4>
+            <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+            <div class="team_social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
         </div>
         <div class="team">
-            <img src="./images/David Banks.png" alt="">
-            <p class="name">David Banks</p>
-            <p class="position">CFO</p>
-            <p class="note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__member">
+                <img 
+                class="team__member__photo" 
+                src="./images/DavidBanks-564.jpg" alt="">
+            </div>
+            <h3 class="team__name">David Banks</h3>
+            <h4 class="team__position">CFO</h4>
+            <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+            <div class="team_social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
         </div>
         <div class="team">
-            <img src="./images/Frederic Parsons.png" alt="">
-            <p class="name">Frederick Parsons</p>
-            <p class="position">COO</p>
-            <p class="note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__member">
+                <img 
+                class="team__member__photo" 
+                src="./images/FrederickParsons-422.jpg" alt="">
+            </div>
+            <h3 class="team__name">Frederick Parsons</h3>
+            <h4 class="team__position">COO</h4>
+            <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+            <div class="team__social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
         </div>
     </main>
-    <section class="contact">
-        <h2 class="title">CONTACT US</h2>
-        <p></p>
-        <div class="contact">
+    <form class="contact">
+        <h2 class="contact__title">CONTACT US</h2>
+        <p class="contact__text">Most calendars are designed for teams. 
+            Slate is designed for freelancers</p>
+        <div class="contact__form">
             <input type="text">
             <input type="text">
             <label for=""><input type="checkbox">Checkbox</label>
-            <button>Send</button>
+            <button class="contact__button" role="button">Send</button>
         </div>
-    </section>
+    </form>
     <footer>
-        <img src="./images/dark.svg" alt="">
-        <div class="contactFooter">
-        <p>Contact us:</p>
-        <a href="mailto: have@nicecoding.io">have@nicecoding.io</a>
-    </div>
-    <button>Read Whitepaper</button>
-    <div class="footerfooter">
-        <p>Copywriters 2020</p>
-        <p>FAQ</p>
-        <p>Terms of Use</p>
-        <p>Privacy Policy</p>
+        <div class="footer__logo">
+            <img src="./images/dark.svg" alt="">
+        </div>
+        <div class="footer__container">
+            <p class="footer__text">Contact us:</p>
+            <a class="footer__mail" href="mailto: have@nicecoding.io">have@nicecoding.io</a>
+        </div>
+    <button class="footer__button" role="button">Read Whitepaper</button>
+    <div class="footer__bottom">
+        <ul>
+            <li>Copywriters 2020</li>
+            <li>FAQ</li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
+        </ul>
     </div>
     </footer>   
 </body>
