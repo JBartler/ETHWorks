@@ -4,12 +4,15 @@
     margin: 0;
     font-family: 'Sen',sans-serif;
     scroll-behavior: smooth;
+    color: #FFFFFF;
 }
 
 body{
     max-width: 1440px;
     max-height: 2458px;
-    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 nav{
@@ -18,6 +21,8 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 999;
+    background-color: #FFFFFF;
 }
 
 .nav__logo{
@@ -53,66 +58,111 @@ nav{
     transition: .6s;
 }
 
-header{ /*3 nakladajace sie kawalki */
-    background-color: lawngreen;
-    width: 1440px;
+header{
+    position: relative;
+    width: 100%;
     height: 908px;
+}
+
+.header__background{
+    top: 0;
+    left: 0;
+}
+
+.header__background__img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.header__background__img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header__background__img3{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: -2;
 }
 
 .header__container{
     position: absolute;
-    background-color: yellow;
-    width: 1244px;
-    height: 652px;
+    max-width: 1244px;
+    max-height: 652px;
+    width: 100%;
+    height: 100%;
     left: 135px;
-    top: 196px;
+    top: 126px;
 }
 
 .header__title{
     position: absolute;
     width: 569px;
-    height: 224px;
+    /* height: 224px; */
     left:1px;
     top: 80px;
-    font-family: Sen;
-    font-style: normal;
-    font-weight: bold;
+    /* font-family: Sen; */
+    /* font-style: normal; */
+    /* font-weight: bold; */
     font-size: 40px;
-    line-height: 56px;
-    /* or 140% */
+    line-height: 140%;
     letter-spacing: 0.2px;
-    color: #b31818;
 }
 
 .header__subscribe{
     position: absolute;
-    width: 571px;
+    /* width: 571px; */
     height: 95px;
     left: 1px;
     bottom: 184px;
     font-weight: 400;
-    font-size: 17px;
+    /* font-size: 17px; */
 }
 
 .header__text{
     font-size: 18px;
+    opacity: 70%;
+    line-height: 18px;
 }
 
-.header__input{
-    width: 416px;
-    height: 46px;
-    border-radius: 25px;
+.header__send{
+    position: relative;
     margin-top: 18px;
+    width: 568px;
+    height: 46px;
 }
 
-.header__button{
+.header__send__input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.header__send__button{
+    position: absolute;
     width: 154px;
-    height: 46px;
+    height: 100%;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 17px;
     background: #38A5DB;
+    outline: none;
+    border:none;
     border-radius: 25px;
+    z-index: 2;
+    right: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .header__video__player{
@@ -123,34 +173,296 @@ header{ /*3 nakladajace sie kawalki */
     object-fit: fill;
 }
 
-.title{
+.header__social ul{
+    list-style: none; 
+}
+
+
+/* .header__social__twitter{
+
+}
+
+.header__social__facebook{
+
+}
+
+.header__social__arrowdown{
+
+} */
+
+main{
     height: 545px;
 }
 
-main{
-    background-color: crimson;
+.team__container{
+    max-width: 1171px;
+    max-height: 457px;
+    width: 100%;
+    height: 100%;
+    margin: 40px auto 0;
+}
+
+.team_main{
+    text-align: center;
+    width: 100%;
+    color: #1C1F83;
+    line-height: 34px;
+    font-size: 16px;
+}
+
+.team{
+    display: flex;
+    width: 1171px;
+    height: 457px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.team__members{
+    width: 270px;
+    height: 378px;
+    text-align: center;
+    margin-top: 44px;
 }
 
 .team__member{
     width: 131px;
     height: 131px;
-    
+    margin: 4px auto;
 }
 
 .team__member__photo{
     width: 100%;
     height: 100%;
+    /* transform: scale(1.2); */
     border-radius: 50%;
     object-fit: cover;
     object-position: 100% -10%;
     background-size: 150px 300px;
 }
 
+.team__name{
+    height: 34px;
+    color: #38A5DB;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 16px;
+}
+
+.team__position{
+    height: 18px;
+    color: #011226;
+    line-height: 17.7px;
+    font-size: 13px;
+    font-family: "Open Sans";
+    margin: 8px 0 16px 0;
+}
+
+.team__note{
+    height: 96px;
+    font-size: 18px;
+    color: #45515F;
+
+}
+
+.team__socials{
+    height: 23px;
+    margin-top:32px;
+}
+
+.team__social{
+    display: inline;
+    border: 1px solid rgba(127, 139, 152, 0.3);
+    border-radius: 3px;   
+}
+
+.fa{
+    width: 43px;
+    height: 23px;
+    color: #001832;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+.title{
+    height: 545px;
+}
+
+section{
+    background-color:#252B42;
+    height: 670px;
+}
+
 .contact{
-    background-color: darkturquoise;
+    width: 360px;
+    height: 205px;
+    padding-top:78px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__title{
+    line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 12px;
+    margin-bottom: 26px;
+}
+
+.contact__text{
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 401px;
+    height: 370px;
+    background-color: #4250BF;
+    border-radius: 13px;
+    margin: 40px auto;
+}
+
+.contact__input{
+    width: 319px;
+    height: 288px;
+    margin: 0 auto;
+
+}
+
+.contact__input__name{
+    margin-top: 84px;
+    width: 319px;
+    height: 46px;
+    border-radius: 25px;
+    border: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 17px;
+    outline: none;
+}
+
+.contact__input__email{
+    margin-top: 24px;
+    width: 319px;
+    height: 46px;
+    border-radius: 25px;
+    border: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 17px;
+    outline: none;
+}
+
+.contact__checkbox{
+    width: 118px;
+    height: 24px;
+    margin-top: 24px;
+}
+
+.contact__box{
+    width: 24px;
+    height: 24px;
+    margin-right: 1px;
+    vertical-align: middle;
+
+}
+
+.contact_checkbox_label{
+   font-size: 17px;
+   line-height: 20.45px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.contact__button{
+    margin-top: 37px;
+    width: 95px;
+    height: 46px;
+    background-color: #38A5DB;
+    border-radius: 23px;
+    border:none;
+    cursor: pointer;
 }
 
 footer{
-    background-color: hotpink;
+    position: relative;
+    height: 225px;
+    background-image: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);;
+}
+
+.footer__top{
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.32px;
+    line-height: 19.25px;
+}
+
+.footer__logo{
+    margin-left: 135px;
+    margin-top: 48px;
+    margin-right: 300px;
+}
+
+.footer__container{
+    width: 370px;
+    margin-top: 40px;
+}
+
+.footer__text{
+    color: #263396;
+    margin-bottom: 16px;
+    line-height: 19.25px;
+    letter-spacing: 0.32px;
+}
+
+.footer__mail{
+    color: #0F81FF;
+    font-size: 20px;
+    line-height: 24.06px;
+    letter-spacing: 0.4px;
+}
+
+.footer__button{
+    width: 220px;
+    height: 46px;
+    background-color: #38A5DB;
+    margin-top: 48px;
+    margin-left: 182px;
+    border-radius: 23px;
+    border: none;
+    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    cursor: pointer;
+}
+
+.footer__bottom{
+    position: absolute;
+    max-width: 811px;
+    height: 22px;
+    left: 309px;
+    bottom: 44px;
+    margin-top: 56px;
+}
+
+.footer__bottom__ul{
+    display: flex;
+    text-align: center;
+}
+
+.footer__bottom__li{
+    border-left: 2px solid #9CA4C7;
+    color: #45515F;
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    width: 200px;
+    list-style: none;
+}
+
+.footer__bottom__li:first-child{
+    border-left: none;
 }
 

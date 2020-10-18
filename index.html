@@ -21,29 +21,38 @@
             </ul>
         </div>
     </nav>
-    <header>
+    <header>          
+            <div class="header__background">
+                <img class="header__background__img1" src="./images/Mask.svg" alt="">
+                <img class="header__background__img2" src="./images/Shape1@1x.svg" alt="">
+                <img class="header__background__img3" src="./images/Shape2@1x.svg" alt="">
+            </div>
         <div class="header__container">
             <h1 class="header__title">The first fully-automatic social crypto trading platform with real crypto currency</h1>
                 <div class="header__video">
                     <video class="header__video__player"   poster="./images/video-2048.jpg">Your browser does not support the video tag</video>
                 </div>
                 <div class="header__subscribe">
-                    <p class="header__text">Subscribe and get the lastes information</p>
-                    <input class="header__input" type="text" placeholder="Enter your email">
-                    <button class="header__button" role="button">Subscribe</button>
+                    <label class="header__text" for="email">Subscribe and get the lastes information</label>
+                    <form class="header__send">
+                        <input class="header__send__input" type="email" placeholder="Enter your email" maxlength="35">
+                        <button class="header__send__button" role="button" type="reset">Subscribe</button>
+                    </form>
                 </div>
-            <!-- <div class="header__social">
+            <div class="header__social">
                 <ul>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#section" class="fa fa-arrow-down"></a></li>
+                    <li class="header__social__twitter"><a href="#" class="fa fa-twitter"></a></li>
+                    <li class="header__social__facebook"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="header__social__arrowdown"><a href="#section" class="fa fa-arrow-down"></a></li>
                 </ul>
-            </div>  -->
-        </div> 
+            </div> 
+    </div> 
     </header>
     <main>
-        <h2 class="main" id="section">TEAM</h2>
+        <div class="team__container">
+        <h2 class="team_main" id="section">TEAM</h2>
         <div class="team">
+        <div class="team__members">
             <div class="team__member">
                 <img 
                 class="team__member__photo" 
@@ -54,12 +63,16 @@
             <h3 class="team__name">Edgar Morrison</h3>
             <h4 class="team__position">CEO</h4>
             <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <div class="team__social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__socials">
+                <div class="team__social">
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div class="team__social">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div> 
             </div>
         </div>
-        <div class="team">
+        <div class="team__members">
             <div class="team__member">
                 <img 
                 class="team__member__photo" 
@@ -68,12 +81,16 @@
             <h3 class="team__name">Mae Martin</h3>
             <h4 class="team__position">CTO</h4>
             <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <div class="team_social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__socials">
+                <div class="team__social">
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div class="team__social">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div> 
             </div>
         </div>
-        <div class="team">
+        <div class="team__members">
             <div class="team__member">
                 <img 
                 class="team__member__photo" 
@@ -82,12 +99,16 @@
             <h3 class="team__name">David Banks</h3>
             <h4 class="team__position">CFO</h4>
             <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <div class="team_social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__socials">
+                <div class="team__social">
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div class="team__social">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div> 
             </div>
         </div>
-        <div class="team">
+        <div class="team__members">
             <div class="team__member">
                 <img 
                 class="team__member__photo" 
@@ -96,24 +117,38 @@
             <h3 class="team__name">Frederick Parsons</h3>
             <h4 class="team__position">COO</h4>
             <p class="team__note">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
-            <div class="team__social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+            <div class="team__socials">
+                <div class="team__social">
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div class="team__social">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div> 
             </div>
         </div>
+    </div>
+</div>
     </main>
-    <form class="contact">
-        <h2 class="contact__title">CONTACT US</h2>
-        <p class="contact__text">Most calendars are designed for teams. 
-            Slate is designed for freelancers</p>
-        <div class="contact__form">
-            <input type="text">
-            <input type="text">
-            <label for=""><input type="checkbox">Checkbox</label>
-            <button class="contact__button" role="button">Send</button>
+    <section>
+        <div class="contact">
+            <h2 class="contact__title">CONTACT US</h2>
+            <p class="contact__text">Most calendars are designed for teams. 
+                Slate is designed for freelancers</p>
         </div>
-    </form>
+        <div class="contact__form">
+            <div class="contact__input">
+                <input class="contact__input__name" type="text" placeholder="Your Name" maxlength="20">
+                <input class="contact__input__email" type="email" placeholder="Your Email" maxlength="35">
+                    <div class="contact__checkbox">
+                        <input type="checkbox" class="contact__box">
+                        <label class="contact_checkbox_label" for="">Checkbox</label>
+                    </div>  
+                <button class="contact__button" role="button" type="reset">Send</button>
+            </div>
+        </div>
+    </section>
     <footer>
+        <div class="footer__top">
         <div class="footer__logo">
             <img src="./images/dark.svg" alt="">
         </div>
@@ -121,13 +156,14 @@
             <p class="footer__text">Contact us:</p>
             <a class="footer__mail" href="mailto: have@nicecoding.io">have@nicecoding.io</a>
         </div>
-    <button class="footer__button" role="button">Read Whitepaper</button>
+            <button class="footer__button" role="button">Read Whitepaper</button>
+        </div>
     <div class="footer__bottom">
-        <ul>
-            <li>Copywriters 2020</li>
-            <li>FAQ</li>
-            <li>Terms of Use</li>
-            <li>Privacy Policy</li>
+        <ul class="footer__bottom__ul">
+            <li class="footer__bottom__li">© Copywriters 2020</li>
+            <li class="footer__bottom__li">FAQ</li>
+            <li class="footer__bottom__li">Terms of Use</li>
+            <li class="footer__bottom__li">Privacy Policy</li>
         </ul>
     </div>
     </footer>   
