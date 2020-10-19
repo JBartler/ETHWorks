@@ -625,6 +625,18 @@ footer{
 }
 
 @media (max-width: 767px){
+    .header__background__img1{
+        top: 270px;
+        left: 120px;
+    }
+    .header__background__img2{
+        top: 20px;
+        transform: scale(5);
+    }
+    .header__background__img3{
+        top: -385px;
+        left: -430px;
+    }
 
     .nav__logo{
         text-align:unset;
@@ -645,17 +657,43 @@ footer{
         margin-left: 0;
     }
 
+    header{
+        height: 752px;
+    }
+
+    main{
+      height: 496px;  
+    }
+
     .header__title{
         font-size: 24px;
+        height: 160px;
+        width: 287px;
+        margin: 0 auto;
+        top: 48px;
+        left: 17px;
+    }
 
+    .header__container{
+        height: 752px;
+        top: 0;
+        margin: 0 auto;
+        
     }
 
     .header__subscribe{
         left: 19px;
+        top: 260px;
+        height: 142px;
+        width: 287px;
     }
 
     .header__text{
         font-size: 14px;
+    }
+
+    .header__send{
+        margin-top: 8px;
     }
 
     .header__send__input{
@@ -671,7 +709,7 @@ footer{
 
     .header__social{
         right: 26px;
-        bottom:695px;
+        top: 430px
     }
 
     .header__social__circle{
@@ -689,6 +727,7 @@ footer{
         height: 30px;
         width: 30px;
         left: 145px;
+        top: 442px;
     }
 
     .arrow .fa{
@@ -700,12 +739,101 @@ footer{
     .header__video__player{
         width: 288px;
         height: 200px;
+        top: 552px;
     }
 
-    .header__background__img2{
-        transform: scale(5);
-        top: 239px;
+    section{
+        height: 681px;
     }
+
+    .contact__input{
+        width: 256px;
+        
+    }
+
+    .contact{
+        width: 265px;
+        height: 95px;
+        padding-top: 88px;
+    }
+
+    .contact__form{
+        margin: 145px auto;
+        width: 288px;
+    }
+
+    .contact__title{
+        height: 33px;
+    }
+
+    .contact__text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .contact__input__name{
+        width: 256px;
+    }
+
+    .contact__input__email{
+        width: 256px;
+    }
+
+    .contact__checkbox{
+        margin-top: 37px;
+    }
+
+    .contact__box{
+        width: 1;
+    }
+
+    .team{overflow: hidden;}
+
+    footer{
+        height: 346px;
+    }
+
+    .footer__top{
+        flex-wrap: wrap;
+    }
+
+    .footer__logo{
+        margin-left: 16px;
+        margin-top: 32px;
+    }
+
+    .footer__logo img{
+        width: 55px;
+        height: 22px;
+    }
+
+    .footer__container{
+        width: 100%;
+    }
+
+    .footer__button{
+        margin: 40px auto;
+    }
+
+    .footer__bottom{
+        display: flex;
+        /* flex-wrap: wrap; */
+        height: 64px;
+        width: 288px;
+        margin: 0;
+    }
+
+    .footer__bottom__ul{
+        margin-left: 16px;
+        flex-wrap: wrap;
+    }
+
+    .footer__bottom__li{
+        font-size: 12px;
+        border:none;
+        width: 136px;
+    }
+
 }
 
 
