@@ -18,7 +18,7 @@ body{
 nav{
     height: 70px;
     display: flex;
-    position: -webkit-sticky;
+    position: -webkit -sticky;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -65,27 +65,30 @@ header{
 }
 
 .header__background{
-    top: 0;
-    left: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.header__background__img1{
+.header__background__img1{ 
     position: absolute;
     top: 0;
     left: 0;
     z-index: -3;
+    width: 100%;
 }
 
 .header__background__img2{
     position: absolute;
-    top: 0;
+    top: -70px;
     left: 0;
     z-index: -1;
+    width: 100%;
 }
 
 .header__background__img3{
     position: absolute;
-    top: 0; 
+    top: -62.67px;
     left: 0;
     z-index: -2;
 }
@@ -173,22 +176,50 @@ header{
     object-fit: fill;
 }
 
-.header__social ul{
-    list-style: none; 
+.header__social{
+    position: absolute;
+    bottom: 72px;
+    right: 34px;
+    width: 40px;
 }
 
-
-/* .header__social__twitter{
-
+.header__social__circle{
+    height: 40px;
+    background-color: #63C7FF;
+    border-radius: 19px;
+    color: #DADADA;
+    margin-top: 12px;  
 }
 
-.header__social__facebook{
+.header__social__circle .fa{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+} 
 
+.header__social__circle .fa-facebook{
+    transform: translatex(-3px);
 }
 
-.header__social__arrowdown{
+.arrow{
+    position: absolute;
+    bottom: 0;
+    left: 556px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(231, 231, 231, 0.3);
+    text-align: center;
+    vertical-align: middle;
+}
 
-} */
+.arrow .fa{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
 
 main{
     height: 545px;
@@ -208,11 +239,13 @@ main{
     color: #1C1F83;
     line-height: 34px;
     font-size: 16px;
+    letter-spacing: 12px;
 }
 
 .team{
     display: flex;
-    width: 1171px;
+    max-width: 1171px;
+    width: 100%;
     height: 457px;
     margin: 0 auto;
     justify-content: space-between;
@@ -238,14 +271,29 @@ main{
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 50px;
+    top: 55px;
     left: 0;
     transform: scale(2);
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 100% -10%;
-    background-size: 150px 300px;
+    object-fit: contain;
 }
+
+.two{
+    transform: scale(1.1);
+    top:5px;
+    object-fit: cover;
+}
+
+.three{
+    transform: scale(2.05);
+    top:65px;
+}
+
+.four{
+    left: 15px;
+    top: 80px;
+    transform: scale(2.4);
+}
+
 
 .team__name{
     height: 34px;
@@ -445,12 +493,9 @@ footer{
 }
 
 .footer__bottom{
-    position: absolute;
     max-width: 811px;
     height: 22px;
-    left: 309px;
-    bottom: 44px;
-    margin-top: 56px;
+    margin: 56px auto;
 }
 
 .footer__bottom__ul{
@@ -471,4 +516,197 @@ footer{
 .footer__bottom__li:first-child{
     border-left: none;
 }
+
+@media (max-width: 1441px) {
+
+    body{
+        max-height: 2858px;
+    }
+
+    .nav__logo{
+        margin-left: 16px;
+    }
+
+    .nav__navbar{
+        right: 15px;
+    }
+
+    header{
+        height: 1322px;
+    }
+
+    .header__background{
+        overflow: hidden;
+    }
+
+    .header__background__img1{
+        top: 240px;
+        left: 100px;
+        transform: scale(2);
+    }
+
+    .header__background__img2{
+        transform: scale(2);
+        top: 100px;
+    }
+
+    .header__background__img3{
+        top:-20px;
+        left: -240px;
+    }
+
+    .header__container{
+        left:1px;
+        height: 1322px;
+        max-height: 1322px;
+
+    }
+
+    .header__title{
+        left: 80px;
+        top: 2px;
+    }
+
+    .header__social{
+        position: absolute;
+        bottom: 575px;
+        right: 15px;
+    }
+
+    .header__video__player{
+        position: absolute;
+        bottom: 126px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .header__subscribe{
+        left: 78px;
+        bottom: 876px;
+    }
+
+    .arrow{
+        position: absolute;
+        bottom:692px;
+        left: 355px;
+    }
+
+    .team__main{
+        margin-top: 56px;
+    }
+
+    .team__members{
+        margin-top: 23px;
+    }
+
+    section{
+        height: 693px;
+    }
+
+    .footer__logo{
+        margin-left: 15px;
+        margin-right: 84px;
+    }
+
+    .footer__button{
+        margin-left: -32px;
+    }
+
+    .footer__bottom__ul{
+        margin-left: 47px;
+    }
+
+    .footer__bottom__li{
+        width: 174px;
+    }
+}
+
+@media (max-width: 767px){
+
+    .nav__logo{
+        text-align:unset;
+        margin-top:24px;
+    }
+    
+    .nav__logo img{
+        height: 22px;
+        width: 56px;
+    }
+
+    .nav__navbar{
+        right: 0;
+    }
+
+    .nav__navbar__link{
+        margin-right: 24px;
+        margin-left: 0;
+    }
+
+    .header__title{
+        font-size: 24px;
+
+    }
+
+    .header__subscribe{
+        left: 19px;
+    }
+
+    .header__text{
+        font-size: 14px;
+    }
+
+    .header__send__input{
+        width: 287px;
+        height: 46px;
+    }
+
+    .header__send__button{
+        left: 0;
+        top: 62px;
+        width: 287px;
+    }
+
+    .header__social{
+        right: 26px;
+        bottom:695px;
+    }
+
+    .header__social__circle{
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__social__circle .fa{
+        line-height: 30px;
+        font-size: 20px;
+        width: 1px;
+    }
+
+    .arrow{
+        height: 30px;
+        width: 30px;
+        left: 145px;
+    }
+
+    .arrow .fa{
+        font-size: 16px;
+        line-height: 30px;
+        width: 15px;
+    }
+
+    .header__video__player{
+        width: 288px;
+        height: 200px;
+    }
+
+    .header__background__img2{
+        transform: scale(5);
+        top: 239px;
+    }
+}
+
+
 
