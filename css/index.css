@@ -520,9 +520,9 @@ footer{
     border-left: none;
 }
 
-:not(.modal){
+/* :not(.modal){
     opacity: 1;
-} 
+}  */
 
 .modal{
     background-color:white;
@@ -534,6 +534,11 @@ footer{
     border-radius: 20px;
     display: none;
     z-index: 999;
+
+}
+
+.background__style{
+    /* opacity: 0.3; */
 
 }
 

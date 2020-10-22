@@ -10,6 +10,7 @@
     
 </head>
 <body>
+    <div class="background__style">
     <nav><!--  dodac do headera jak da rade -->
         <div class="nav__logo">
             <img src="./images/dark.svg" alt=''>
@@ -166,6 +167,7 @@
         </ul>
     </div>
     </footer> 
+</div>
     <div id="modal" class="modal">
             <div class="modal-dialog">
                 <div class="btnClose">
@@ -193,12 +195,13 @@
           let positionModal = document.getElementById('modal__position');
           let noteModal = document.getElementById('modal__text');
           let quitModal = document.getElementById('close');
+          let back = document.getElementsByClassName('background__style');
 
           
           function showModal(id){
                 modal.style.display='block';
-                // // document.body.style.backgroundColor="#252B42"
-                // document.body.style.filter='opacity(0.3)'
+                // background__style.style.backgroundColor="#252B42"
+                back.style.backgroundColor = 'white'
                 // modal.style.opacity='1'
 
                 if(id === "id01"){
