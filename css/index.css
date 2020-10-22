@@ -1,13 +1,13 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
     font-family: 'Sen',sans-serif;
     scroll-behavior: smooth;
     color: #FFFFFF;
 }
 
 body{
+    position: relative;
     max-width: 1440px;
     max-height: 2458px;
     width: 100%;
@@ -265,6 +265,7 @@ main{
     overflow: hidden;
     border-radius:50%;
     position: relative;
+    cursor: pointer;
 }
 
 .team__member__photo{
@@ -440,6 +441,7 @@ section{
     border-radius: 23px;
     border:none;
     cursor: pointer;
+    outline: none;
 }
 
 footer{
@@ -490,6 +492,7 @@ footer{
     border: none;
     box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
     cursor: pointer;
+    outline: none;
 }
 
 .footer__bottom{
@@ -515,6 +518,84 @@ footer{
 
 .footer__bottom__li:first-child{
     border-left: none;
+}
+
+:not(.modal){
+    opacity: 1;
+} 
+
+.modal{
+    background-color:white;
+    position: absolute;
+    top: 800px;
+    left:400px;
+    width: 630px;
+    height: 744px;
+    border-radius: 20px;
+    display: none;
+    z-index: 999;
+
+}
+
+.modal-dialog{
+    overflow-y: initial !important;
+    max-width: 0 auto;
+    margin-bottom:50px;
+    width: 514px;
+}
+.modal-body{
+    height: 570px;
+    overflow-y: auto;
+    left:31px;
+    bottom: 50px;
+}
+
+#modal__text{
+    position: absolute;
+    width: 514px;
+    height: 570px;
+    left: 60px;
+    bottom: -20px;
+    font-size: 18px;
+    color: #45515F;
+}
+
+#close{
+    color: #828282;
+    font-size: 38px;
+}
+
+#modal__id{
+    text-align: center;
+    width: 630px;
+    margin-top: 72px;
+    height: 34px;
+    font-size: 40px;
+    line-height: 34px;
+    color: #38A5DB;
+}
+
+#modal__position{
+    text-align: center;
+    height: 18px;
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 0.26px;
+    width: 630px;
+}
+
+
+.btnClose{
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid  #828282;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    left: 573px;  
+    top: 32px;
 }
 
 @media (max-width: 1441px) {
@@ -594,12 +675,21 @@ footer{
         left: 355px;
     }
 
+    .team{
+        margin: 0 15px;
+        overflow: hidden;
+    }
+
     .team__main{
         margin-top: 56px;
     }
 
     .team__members{
-        margin-top: 23px;
+        margin-top: 24px;
+    }
+
+    .team__member{
+        margin: 0 auto 16px;
     }
 
     section{
@@ -694,6 +784,7 @@ footer{
 
     .header__send{
         margin-top: 8px;
+        width: 100%;
     }
 
     .header__send__input{
@@ -719,8 +810,8 @@ footer{
 
     .header__social__circle .fa{
         line-height: 30px;
-        font-size: 20px;
-        width: 1px;
+        font-size: 19px;
+        width: 31px;
     }
 
     .arrow{
@@ -787,7 +878,53 @@ footer{
         width: 1;
     }
 
-    .team{overflow: hidden;}
+    .team{
+        overflow: hidden;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .team__container{
+        max-height: 496px;
+    }
+
+    .team__members{
+        height: 310px;
+        width: 136px;
+        
+    }
+
+    .team__member{
+        width: 115px;
+        height: 115px;
+        margin-top: 0;
+        margin: 8px auto;
+    }
+
+    .team__name{
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .team__note{
+        font-size: 12px;
+    }
+
+    .team__name{
+        width: 136px;
+    }
+
+    .team__position{
+        margin: 0 0 8px
+    }
+
+    .team__note{
+        height: 90px;
+    }
+
+    .team__socials{
+        margin-top: 14px;
+    }
 
     footer{
         height: 346px;
