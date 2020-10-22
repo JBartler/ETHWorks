@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-    
 </head>
 <body>
-    <div class="background__style">
-    <nav><!--  dodac do headera jak da rade -->
+    <div class="background__style" id="blur">
+    <nav>
         <div class="nav__logo">
             <img src="./images/dark.svg" alt=''>
         </div>
         <div class="nav__navbar">
             <ul>
-                <a class="nav__navbar__link" href="">ICO</a>
-                <a class="nav__navbar__link" href="">Team</a>
-                <a class="nav__navbar__link" href="">Contact</a>
+                <a class="nav__navbar__link" href="#BGC">ICO</a>
+                <a class="nav__navbar__link" href="#section">Team</a>
+                <a class="nav__navbar__link" href="#contact">Contact</a>
             </ul>
         </div>
     </nav>
     <header>          
-            <div class="header__background">
+            <div class="header__background" id="BGC">
                 <img class="header__background__img1" src="./images/Mask.svg" alt="">
                 <img class="header__background__img2" src="./images/Shape1@1x.svg" alt="">
                 <img class="header__background__img3" src="./images/Shape2@1x.svg" alt="">
@@ -51,14 +50,16 @@
     <main>
         <div class="team__container">
         <h2 class="team_main" id="section">TEAM</h2>
+        <div class="slider-y">
         <div class="team">
         <div class="team__members" id="id01" onclick="showModal(this.id)">
             <div class="team__member">
                 <img 
                 class="team__member__photo" 
                 src="./images/EdgarMorrison-141.jpg" 
-                srcset="./images/EdgarMorrison-564.jpg 564w"
-                alt="">
+                srcset="./images/EdgarMorrison-282.jpg 282w,
+                        ./images/EdgarMorrison-564.jpg 564w,"
+                alt="Edgar Morrison">
             </div>
             <h3 class="team__name" id="name__id01" >Edgar Morrison</h3>
             <h4 class="team__position" id="position__id01">CEO</h4>
@@ -76,7 +77,10 @@
             <div class="team__member">
                 <img 
                 class="team__member__photo two" 
-                src="./images/MaeMartin-475.jpg" alt="">
+                src="./images/MaeMartin-118.jpg"
+                srcset="./images/MaeMartin-237.jpg 237w,
+                        ./images/MaeMartin-475.jpg 475w," 
+                alt="Mae Martin">
             </div>
             <h3 class="team__name" id="name__id02">Mae Martin</h3>
             <h4 class="team__position" id="position__id02">CTO</h4>
@@ -94,7 +98,10 @@
             <div class="team__member">
                 <img 
                 class="team__member__photo three" 
-                src="./images/DavidBanks-564.jpg" alt="">
+                src="./images/DavidBanks-141.jpg"
+                srcset="./images/DavidBanks-282.jpg 282w,
+                        ./images/DavidBanks-564.jpg 564w," 
+                alt="David Banks">
             </div>
             <h3 class="team__name" id="name__id03">David Banks</h3>
             <h4 class="team__position" id="position__id03">CFO</h4>
@@ -112,7 +119,10 @@
             <div class="team__member">
                 <img 
                 class="team__member__photo four" 
-                src="./images/FrederickParsons-422.jpg" alt="">
+                src="./images/FrederickParsons-105.jpg"
+                srcset="./images/FrederickParsons-211.jpg 211w,
+                        ./images/FrederickParsons-422.jpg 422w," 
+                alt="Frederick Parsons">
             </div>
             <h3 class="team__name" id="name__id04">Frederick Parsons</h3>
             <h4 class="team__position" id="position__id04">COO</h4>
@@ -128,9 +138,10 @@
         </div>
     </div>
 </div>
+</div>
     </main>
     <section>
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2 class="contact__title">CONTACT US</h2>
             <p class="contact__text">Most calendars are designed for teams. 
                 Slate is designed for freelancers</p>
@@ -180,64 +191,6 @@
                 </div>
         </div>
       </div> 
-      <script>
-          let name1 = document.getElementById('name__id01');
-          let name2 = document.getElementById('name__id02');
-          let name3 = document.getElementById('name__id03');
-          let name4 = document.getElementById('name__id04');
-          let position1 = document.getElementById('position__id01');
-          let position2 = document.getElementById('position__id02');
-          let position3 = document.getElementById('position__id03');
-          let position4 = document.getElementById('position__id04');
-          let text = 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. ';
-          let modal = document.getElementById('modal');
-          let idModal = document.getElementById('modal__id');
-          let positionModal = document.getElementById('modal__position');
-          let noteModal = document.getElementById('modal__text');
-          let quitModal = document.getElementById('close');
-          let back = document.getElementsByClassName('background__style');
-
-          
-          function showModal(id){
-                modal.style.display='block';
-                // background__style.style.backgroundColor="#252B42"
-                back.style.backgroundColor = 'white'
-                // modal.style.opacity='1'
-
-                if(id === "id01"){
-                    idModal.innerHTML = name1.innerHTML
-                    positionModal.innerHTML = position1.innerHTML
-                    noteModal.innerHTML = text
-                } 
-                if(id === "id02"){
-                    idModal.innerHTML = name2.innerHTML
-                    positionModal.innerHTML = position2.innerHTML
-                    noteModal.innerHTML = text
-                } 
-                if(id === "id03"){
-                    idModal.innerHTML = name3.innerHTML
-                    positionModal.innerHTML = position3.innerHTML
-                    noteModal.innerHTML = text
-                } 
-                if(id === "id04"){
-                    idModal.innerHTML = name4.innerHTML
-                    positionModal.innerHTML = position4.innerHTML
-                    noteModal.innerHTML = text
-                }
-          }
-
-          function closeModal() {
-                modal.style.display='none';
-                document.body.style.backgroundColor=""
-                document.body.style.opacity=''
-                idModal = '';
-                positionModal = '';
-                noteModal = '';
-          }
-          
-          
-       
-
-      </script> 
 </body>
+<script src="./index.js"></script>
 </html>

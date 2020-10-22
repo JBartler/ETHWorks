@@ -6,6 +6,25 @@
     color: #FFFFFF;
 }
 
+.arrow{
+    position: absolute;
+    bottom: 0;
+    left: 556px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(231, 231, 231, 0.3);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.arrow .fa{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
+
 body{
     position: relative;
     max-width: 1440px;
@@ -13,6 +32,113 @@ body{
     width: 100%;
     height: 100%;
     margin: 0 auto;
+}
+
+.btnClose{
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid  #828282;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    left: 573px;  
+    top: 32px;
+}
+
+.contact{
+    width: 360px;
+    height: 205px;
+    padding-top:78px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__box{
+    width: 24px;
+    height: 24px;
+    margin-right: 1px;
+    vertical-align: middle;
+}
+
+.contact__button{
+    margin-top: 37px;
+    width: 95px;
+    height: 46px;
+    background-color: #38A5DB;
+    border-radius: 23px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact__checkbox{
+    width: 118px;
+    height: 24px;
+    margin-top: 24px;
+}
+
+.contact_checkbox_label{
+   font-size: 17px;
+   line-height: 20.45px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 401px;
+    height: 370px;
+    background-color: #4250BF;
+    border-radius: 13px;
+    margin: 40px auto;
+}
+
+.contact__input{
+    width: 319px;
+    height: 288px;
+    margin: 0 auto;
+}
+
+.contact__input__email{
+    margin-top: 24px;
+    width: 319px;
+    height: 46px;
+    border-radius: 25px;
+    border: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 17px;
+    outline: none;
+}
+
+.contact__input__name{
+    margin-top: 84px;
+    width: 319px;
+    height: 46px;
+    border-radius: 25px;
+    border: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 17px;
+    outline: none;
+}
+
+.contact__text{
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.contact__title{
+    line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 12px;
+    margin-bottom: 26px;
 }
 
 nav{
@@ -106,12 +232,8 @@ header{
 .header__title{
     position: absolute;
     width: 569px;
-    /* height: 224px; */
     left:1px;
     top: 80px;
-    /* font-family: Sen; */
-    /* font-style: normal; */
-    /* font-weight: bold; */
     font-size: 40px;
     line-height: 140%;
     letter-spacing: 0.2px;
@@ -119,12 +241,10 @@ header{
 
 .header__subscribe{
     position: absolute;
-    /* width: 571px; */
     height: 95px;
     left: 1px;
     bottom: 184px;
     font-weight: 400;
-    /* font-size: 17px; */
 }
 
 .header__text{
@@ -202,27 +322,144 @@ header{
     transform: translatex(-3px);
 }
 
-.arrow{
-    position: absolute;
-    bottom: 0;
-    left: 556px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid rgba(231, 231, 231, 0.3);
-    text-align: center;
-    vertical-align: middle;
+.fa{
+    width: 43px;
+    height: 23px;
+    color: #001832;
+    vertical-align: baseline;
+    text-decoration: none;
 }
 
-.arrow .fa{
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 30px;
-    line-height: 60px;
+.four{
+    left: 15px;
+    top: 80px;
+    transform: scale(2.4);
 }
+
+footer{
+    position: relative;
+    height: 225px;
+    background-image: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);;
+}
+
+.footer__bottom{
+    max-width: 811px;
+    height: 22px;
+    margin: 56px auto;
+}
+
+.footer__bottom__li{
+    border-left: 2px solid #9CA4C7;
+    color: #45515F;
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    width: 200px;
+    list-style: none;
+}
+
+.footer__bottom__li:first-child{
+    border-left: none;
+}
+
+.footer__bottom__ul{
+    display: flex;
+    text-align: center;
+}
+
+.footer__button{
+    width: 220px;
+    height: 46px;
+    background-color: #38A5DB;
+    margin-top: 48px;
+    margin-left: 182px;
+    border-radius: 23px;
+    border: none;
+    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    cursor: pointer;
+    outline: none;
+}
+
+.footer__container{
+    width: 370px;
+    margin-top: 40px;
+}
+
+.footer__logo{
+    margin-left: 135px;
+    margin-top: 48px;
+    margin-right: 300px;
+}
+
+.footer__mail{
+    color: #0F81FF;
+    font-size: 20px;
+    line-height: 24.06px;
+    letter-spacing: 0.4px;
+}
+
+.footer__text{
+    color: #263396;
+    margin-bottom: 16px;
+    line-height: 19.25px;
+    letter-spacing: 0.32px;
+}
+
+.footer__top{
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.32px;
+    line-height: 19.25px;
+}
+
+.is-blurred {
+    -webkit-filter: opacity(.3);
+    filter: opacity(.3);
+    background-color: #252B42;
+  }
 
 main{
     height: 545px;
+}
+
+.modal{
+    background-color:white;
+    position: absolute;
+    top: 800px;
+    left:400px;
+    width: 630px;
+    height: 744px;
+    border-radius: 20px;
+    display: none;
+    z-index: 5;
+}
+
+.modal-body{
+    height: 570px;
+    overflow-y: auto;
+    left:31px;
+    bottom: 50px;
+}
+
+.modal-dialog{
+    overflow-y: initial !important;
+    max-width: 0 auto;
+    margin-bottom:50px;
+    width: 514px;
+}
+
+section{
+    background-color:#252B42;
+    height: 670px;
+}
+
+.team{
+    display: flex;
+    max-width: 1171px;
+    width: 100%;
+    height: 457px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .team__container{
@@ -240,22 +477,6 @@ main{
     line-height: 34px;
     font-size: 16px;
     letter-spacing: 12px;
-}
-
-.team{
-    display: flex;
-    max-width: 1171px;
-    width: 100%;
-    height: 457px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-.team__members{
-    width: 270px;
-    height: 378px;
-    text-align: center;
-    margin-top: 44px;
 }
 
 .team__member{
@@ -278,23 +499,12 @@ main{
     object-fit: contain;
 }
 
-.two{
-    transform: scale(1.1);
-    top:5px;
-    object-fit: cover;
+.team__members{
+    width: 270px;
+    height: 378px;
+    text-align: center;
+    margin-top: 44px;
 }
-
-.three{
-    transform: scale(2.05);
-    top:65px;
-}
-
-.four{
-    left: 15px;
-    top: 80px;
-    transform: scale(2.4);
-}
-
 
 .team__name{
     height: 34px;
@@ -302,6 +512,12 @@ main{
     font-size: 24px;
     line-height: 34px;
     margin-top: 16px;
+}
+
+.team__note{
+    height: 96px;
+    font-size: 18px;
+    color: #45515F;
 }
 
 .team__position{
@@ -313,11 +529,10 @@ main{
     margin: 8px 0 16px 0;
 }
 
-.team__note{
-    height: 96px;
-    font-size: 18px;
-    color: #45515F;
-
+.team__social{
+    display: inline;
+    border: 1px solid rgba(127, 139, 152, 0.3);
+    border-radius: 3px;   
 }
 
 .team__socials{
@@ -325,244 +540,19 @@ main{
     margin-top:32px;
 }
 
-.team__social{
-    display: inline;
-    border: 1px solid rgba(127, 139, 152, 0.3);
-    border-radius: 3px;   
-}
-
-.fa{
-    width: 43px;
-    height: 23px;
-    color: #001832;
-    vertical-align: baseline;
-    text-decoration: none;
+.three{
+    transform: scale(2.05);
+    top:65px;
 }
 
 .title{
     height: 545px;
 }
 
-section{
-    background-color:#252B42;
-    height: 670px;
-}
-
-.contact{
-    width: 360px;
-    height: 205px;
-    padding-top:78px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.contact__title{
-    line-height: 34px;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 12px;
-    margin-bottom: 26px;
-}
-
-.contact__text{
-    font-size: 18px;
-    line-height: 24px;
-    padding-bottom: 10px;
-}
-
-.contact__form{
-    display: flex;
-    flex-direction: column;
-    width: 401px;
-    height: 370px;
-    background-color: #4250BF;
-    border-radius: 13px;
-    margin: 40px auto;
-}
-
-.contact__input{
-    width: 319px;
-    height: 288px;
-    margin: 0 auto;
-
-}
-
-.contact__input__name{
-    margin-top: 84px;
-    width: 319px;
-    height: 46px;
-    border-radius: 25px;
-    border: none;
-    color: black;
-    padding-left: 20px;
-    font-size: 17px;
-    outline: none;
-}
-
-.contact__input__email{
-    margin-top: 24px;
-    width: 319px;
-    height: 46px;
-    border-radius: 25px;
-    border: none;
-    color: black;
-    padding-left: 20px;
-    font-size: 17px;
-    outline: none;
-}
-
-.contact__checkbox{
-    width: 118px;
-    height: 24px;
-    margin-top: 24px;
-}
-
-.contact__box{
-    width: 24px;
-    height: 24px;
-    margin-right: 1px;
-    vertical-align: middle;
-
-}
-
-.contact_checkbox_label{
-   font-size: 17px;
-   line-height: 20.45px;
-   display: inline-block;
-   vertical-align: middle;
-}
-
-.contact__button{
-    margin-top: 37px;
-    width: 95px;
-    height: 46px;
-    background-color: #38A5DB;
-    border-radius: 23px;
-    border:none;
-    cursor: pointer;
-    outline: none;
-}
-
-footer{
-    position: relative;
-    height: 225px;
-    background-image: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);;
-}
-
-.footer__top{
-    display: flex;
-    text-align: center;
-    letter-spacing: 0.32px;
-    line-height: 19.25px;
-}
-
-.footer__logo{
-    margin-left: 135px;
-    margin-top: 48px;
-    margin-right: 300px;
-}
-
-.footer__container{
-    width: 370px;
-    margin-top: 40px;
-}
-
-.footer__text{
-    color: #263396;
-    margin-bottom: 16px;
-    line-height: 19.25px;
-    letter-spacing: 0.32px;
-}
-
-.footer__mail{
-    color: #0F81FF;
-    font-size: 20px;
-    line-height: 24.06px;
-    letter-spacing: 0.4px;
-}
-
-.footer__button{
-    width: 220px;
-    height: 46px;
-    background-color: #38A5DB;
-    margin-top: 48px;
-    margin-left: 182px;
-    border-radius: 23px;
-    border: none;
-    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
-    cursor: pointer;
-    outline: none;
-}
-
-.footer__bottom{
-    max-width: 811px;
-    height: 22px;
-    margin: 56px auto;
-}
-
-.footer__bottom__ul{
-    display: flex;
-    text-align: center;
-}
-
-.footer__bottom__li{
-    border-left: 2px solid #9CA4C7;
-    color: #45515F;
-    font-size: 18px;
-    line-height: 24px;
-    height: 24px;
-    width: 200px;
-    list-style: none;
-}
-
-.footer__bottom__li:first-child{
-    border-left: none;
-}
-
-/* :not(.modal){
-    opacity: 1;
-}  */
-
-.modal{
-    background-color:white;
-    position: absolute;
-    top: 800px;
-    left:400px;
-    width: 630px;
-    height: 744px;
-    border-radius: 20px;
-    display: none;
-    z-index: 999;
-
-}
-
-.background__style{
-    /* opacity: 0.3; */
-
-}
-
-.modal-dialog{
-    overflow-y: initial !important;
-    max-width: 0 auto;
-    margin-bottom:50px;
-    width: 514px;
-}
-.modal-body{
-    height: 570px;
-    overflow-y: auto;
-    left:31px;
-    bottom: 50px;
-}
-
-#modal__text{
-    position: absolute;
-    width: 514px;
-    height: 570px;
-    left: 60px;
-    bottom: -20px;
-    font-size: 18px;
-    color: #45515F;
+.two{
+    transform: scale(1.1);
+    top:5px;
+    object-fit: cover;
 }
 
 #close{
@@ -587,34 +577,46 @@ footer{
     font-size: 13px;
     letter-spacing: 0.26px;
     width: 630px;
+    color: #011226;
 }
 
-
-.btnClose{
+#modal__text{
     position: absolute;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid  #828282;
-    border-radius: 50%;
-    margin: 0 auto;
-    width: 24px;
-    height: 24px;
-    left: 573px;  
-    top: 32px;
+    width: 514px;
+    height: 570px;
+    left: 60px;
+    bottom: -20px;
+    font-size: 18px;
+    color: #45515F;
 }
 
 @media (max-width: 1441px) {
+
+    .arrow{
+        position: absolute;
+        bottom:692px;
+        left: 355px;
+    }
 
     body{
         max-height: 2858px;
     }
 
-    .nav__logo{
-        margin-left: 16px;
+    .footer__logo{
+        margin-left: 15px;
+        margin-right: 84px;
     }
 
-    .nav__navbar{
-        right: 15px;
+    .footer__bottom__ul{
+        margin-left: 47px;
+    }
+
+    .footer__bottom__li{
+        width: 174px;
+    }
+
+    .footer__button{
+        margin-left: -32px;
     }
 
     header{
@@ -645,18 +647,22 @@ footer{
         left:1px;
         height: 1322px;
         max-height: 1322px;
-
-    }
-
-    .header__title{
-        left: 80px;
-        top: 2px;
     }
 
     .header__social{
         position: absolute;
         bottom: 575px;
         right: 15px;
+    }
+
+    .header__subscribe{
+        left: 78px;
+        bottom: 876px;
+    }
+
+    .header__title{
+        left: 80px;
+        top: 2px;
     }
 
     .header__video__player{
@@ -669,68 +675,263 @@ footer{
         text-align: center;
     }
 
-    .header__subscribe{
-        left: 78px;
-        bottom: 876px;
+    .modal{
+        top: 1440px;
+        left:78px;
+        width: 613px;
     }
 
-    .arrow{
-        position: absolute;
-        bottom:692px;
-        left: 355px;
+    .nav__logo{
+        margin-left: 16px;
     }
 
-    .team{
-        margin: 0 15px;
-        overflow: hidden;
-    }
-
-    .team__main{
-        margin-top: 56px;
-    }
-
-    .team__members{
-        margin-top: 24px;
-    }
-
-    .team__member{
-        margin: 0 auto 16px;
+    .nav__navbar{
+        right: 15px;
     }
 
     section{
         height: 693px;
     }
 
-    .footer__logo{
-        margin-left: 15px;
-        margin-right: 84px;
+    .slider-y{
+        overflow-y: auto;
     }
 
-    .footer__button{
-        margin-left: -32px;
+    .team{
+        margin: 0 15px;
+        overflow: hidden;
+        width: 200%;
     }
 
-    .footer__bottom__ul{
-        margin-left: 47px;
+    .team__main{
+        margin-top: 56px;
     }
 
-    .footer__bottom__li{
-        width: 174px;
+    .team__member{
+        margin: 0 auto 16px;
+    }
+
+    .team__members{
+        margin-top: 24px;
     }
 }
 
 @media (max-width: 767px){
+
+    .arrow{
+        height: 30px;
+        width: 30px;
+        left: 145px;
+        top: 442px;
+    }
+
+    .arrow .fa{
+        font-size: 16px;
+        line-height: 30px;
+        width: 15px;
+    }
+
+    .btnClose{
+        left: 232px;
+    }
+
+    .contact{
+        width: 265px;
+        height: 95px;
+        padding-top: 88px;
+    }
+
+    .contact__box{
+        width: 1;
+    }
+
+    .contact__checkbox{
+        margin-top: 37px;
+    }
+
+    .contact__form{
+        margin: 145px auto;
+        width: 288px;
+    }
+
+    .contact__input{
+        width: 256px;  
+    }
+
+    .contact__input__email{
+        width: 256px;
+    }
+
+    .contact__input__name{
+        width: 256px;
+    }
+
+    .contact__title{
+        height: 33px;
+    }
+
+    .contact__text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    footer{
+        height: 365px;
+    }
+
+    .footer__bottom{
+        display: flex;
+        height: 64px;
+        width: 288px;
+        margin: 0;
+    }
+
+    .footer__bottom__ul{
+        margin-left: 16px;
+        flex-wrap: wrap;
+    }
+
+    .footer__bottom__li{
+        font-size: 12px;
+        border:none;
+        width: 136px;
+    }
+
+    .footer__button{
+        margin: 40px auto;
+    }
+
+    .footer__container{
+        width: 100%;
+    }
+
+    .footer__logo{
+        margin-left: 16px;
+        margin-top: 32px;
+    }
+
+    .footer__logo img{
+        width: 55px;
+        height: 22px;
+    }
+
+    .footer__top{
+        flex-wrap: wrap;
+    }
+
+    header{
+        height: 752px;
+    }
+
     .header__background__img1{
         top: 270px;
         left: 120px;
     }
+
     .header__background__img2{
         top: 20px;
         transform: scale(5);
     }
+
     .header__background__img3{
         top: -385px;
         left: -430px;
+    }
+
+    .header__container{
+        height: 752px;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .header__send{
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .header__send__button{
+        left: 0;
+        top: 62px;
+        width: 287px;
+    }
+
+    .header__send__input{
+        width: 287px;
+        height: 46px;
+    }
+
+    .header__social{
+        right: 26px;
+        top: 430px
+    }
+
+    .header__social__circle{
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__social__circle .fa{
+        line-height: 30px;
+        font-size: 19px;
+        width: 31px;
+    }
+
+    .header__subscribe{
+        left: 19px;
+        top: 260px;
+        height: 142px;
+        width: 287px;
+    }
+
+    .header__text{
+        font-size: 14px;
+    }
+
+    .header__title{
+        font-size: 24px;
+        height: 160px;
+        width: 287px;
+        margin: 0 auto;
+        top: 48px;
+        left: 17px;
+    }
+
+    .header__video__player{
+        width: 288px;
+        height: 200px;
+        top: 552px;
+    }
+
+    main{
+        height: 496px;  
+      }
+
+    .modal{
+        top: 615px;
+        left:16px;
+        width: 288px;
+        height: 861px;
+    }
+
+    .modal__dialog{
+        width: 288px;
+    }
+
+    #modal__id{
+        width: 55%;
+        font-size: 24px;
+    }
+
+    #modal__text{
+        font-size: 13px;
+        width: 258px;
+        height: 648px;
+        margin-left: -45px;
+        bottom: 1px;
+    }
+
+    #modal__position{
+        width: 55%;
     }
 
     .nav__logo{
@@ -752,135 +953,8 @@ footer{
         margin-left: 0;
     }
 
-    header{
-        height: 752px;
-    }
-
-    main{
-      height: 496px;  
-    }
-
-    .header__title{
-        font-size: 24px;
-        height: 160px;
-        width: 287px;
-        margin: 0 auto;
-        top: 48px;
-        left: 17px;
-    }
-
-    .header__container{
-        height: 752px;
-        top: 0;
-        margin: 0 auto;
-        
-    }
-
-    .header__subscribe{
-        left: 19px;
-        top: 260px;
-        height: 142px;
-        width: 287px;
-    }
-
-    .header__text{
-        font-size: 14px;
-    }
-
-    .header__send{
-        margin-top: 8px;
-        width: 100%;
-    }
-
-    .header__send__input{
-        width: 287px;
-        height: 46px;
-    }
-
-    .header__send__button{
-        left: 0;
-        top: 62px;
-        width: 287px;
-    }
-
-    .header__social{
-        right: 26px;
-        top: 430px
-    }
-
-    .header__social__circle{
-        width: 30px;
-        height: 30px;
-    }
-
-    .header__social__circle .fa{
-        line-height: 30px;
-        font-size: 19px;
-        width: 31px;
-    }
-
-    .arrow{
-        height: 30px;
-        width: 30px;
-        left: 145px;
-        top: 442px;
-    }
-
-    .arrow .fa{
-        font-size: 16px;
-        line-height: 30px;
-        width: 15px;
-    }
-
-    .header__video__player{
-        width: 288px;
-        height: 200px;
-        top: 552px;
-    }
-
     section{
         height: 681px;
-    }
-
-    .contact__input{
-        width: 256px;
-        
-    }
-
-    .contact{
-        width: 265px;
-        height: 95px;
-        padding-top: 88px;
-    }
-
-    .contact__form{
-        margin: 145px auto;
-        width: 288px;
-    }
-
-    .contact__title{
-        height: 33px;
-    }
-
-    .contact__text{
-        font-size: 14px;
-        line-height: 18px;
-    }
-
-    .contact__input__name{
-        width: 256px;
-    }
-
-    .contact__input__email{
-        width: 256px;
-    }
-
-    .contact__checkbox{
-        margin-top: 37px;
-    }
-
-    .contact__box{
-        width: 1;
     }
 
     .team{
@@ -907,76 +981,25 @@ footer{
     }
 
     .team__name{
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 0;
+        width: 136px;
     }
 
     .team__note{
         font-size: 12px;
-    }
-
-    .team__name{
-        width: 136px;
+        height: 90px;
     }
 
     .team__position{
         margin: 0 0 8px
     }
 
-    .team__note{
-        height: 90px;
-    }
-
     .team__socials{
         margin-top: 14px;
     }
 
-    footer{
-        height: 346px;
+    .three{
+        transform: scale(2.15);
     }
-
-    .footer__top{
-        flex-wrap: wrap;
-    }
-
-    .footer__logo{
-        margin-left: 16px;
-        margin-top: 32px;
-    }
-
-    .footer__logo img{
-        width: 55px;
-        height: 22px;
-    }
-
-    .footer__container{
-        width: 100%;
-    }
-
-    .footer__button{
-        margin: 40px auto;
-    }
-
-    .footer__bottom{
-        display: flex;
-        /* flex-wrap: wrap; */
-        height: 64px;
-        width: 288px;
-        margin: 0;
-    }
-
-    .footer__bottom__ul{
-        margin-left: 16px;
-        flex-wrap: wrap;
-    }
-
-    .footer__bottom__li{
-        font-size: 12px;
-        border:none;
-        width: 136px;
-    }
-
 }
-
-
-
